@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088698788133",
+    "project_id": "mele-7f482",
+    "storage_bucket": "mele-7f482.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088698788133:android:535da1bba9d756f1e5d2cc",
+        "android_client_info": {
+          "package_name": "com.utc.mele"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxWvM5FaGoHHL-mc2hrVj1ljkyjq9hJB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
