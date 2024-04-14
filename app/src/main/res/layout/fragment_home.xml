@@ -75,86 +75,124 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Top-Tier Playlists"
-                android:textColor="@color/white" />
+                android:text="Just Ask Mele"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-            <LinearLayout
-                android:id="@+id/top_tier_playlist"
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/today_hit"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                <LinearLayout
+                    android:id="@+id/just_ask_mele"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
 
-                    <RelativeLayout
+                    <ImageView
+                        android:id="@+id/dive_bar_Image"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bkg_home">
+                        android:padding="10dp"
+                        android:src="@drawable/dive_bar" />
 
-                        <ImageView
-                            android:id="@+id/today_hit_Image"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/today_hit" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/k_pop"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <RelativeLayout
+                    <ImageView
+                        android:id="@+id/drinking_game_Image"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bkg_home">
+                        android:padding="10dp"
+                        android:src="@drawable/drinking_game" />
 
-                        <ImageView
-                            android:id="@+id/k_pop_Image"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/k_pop" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/rap_life"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <RelativeLayout
+                    <ImageView
+                        android:id="@+id/a_good_cry_Image"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bkg_home">
+                        android:padding="10dp"
+                        android:src="@drawable/a_good_cry" />
 
-                        <ImageView
-                            android:id="@+id/rap_life_Image"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/rap_life" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/after_hour_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/after_hour" />
+
+                    <ImageView
+                        android:id="@+id/feeling_blue_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/feeling_blue" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top-Tier Playlists"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/top_tier_playlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/today_hit_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/today_hit" />
+
+                    <ImageView
+                        android:id="@+id/k_pop_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/k_pop" />
+
+                    <ImageView
+                        android:id="@+id/rap_life_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/rap_life" />
+
+                    <ImageView
+                        android:id="@+id/country_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/country" />
+
+                    <ImageView
+                        android:id="@+id/deep_house_haven_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/deep_house_haven" />
+
+                    <ImageView
+                        android:id="@+id/alpha_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/alpha" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
         </LinearLayout>
 
 
