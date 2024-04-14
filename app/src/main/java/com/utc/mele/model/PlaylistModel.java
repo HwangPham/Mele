@@ -1,29 +1,57 @@
 package com.utc.mele.model;
 
+import android.net.Uri;
+
 public class PlaylistModel {
-    private String idPlaylist, namePlaylist, imagePlaylist;
+    private String title, artist, duration;
+    private boolean isPlaying;
+    private Uri musicFile;
 
-    public String getIdPlaylist() {
-        return idPlaylist;
+    public PlaylistModel(String title, String artist, String duration, boolean isPlaying, Uri musicFile) {
+        this.title = title;
+        this.artist = artist;
+        this.duration = duration;
+        this.isPlaying = isPlaying;
+        this.musicFile = musicFile;
     }
 
-    public void setIdPlaylist(String idPlaylist) {
-        this.idPlaylist = idPlaylist;
+    public Uri getMusicFile() {
+        return musicFile;
     }
 
-    public String getNamePlaylist() {
-        return namePlaylist;
+    public void setMusicFile(Uri musicFile) {
+        this.musicFile = musicFile;
     }
 
-    public void setNamePlaylist(String namePlaylist) {
-        this.namePlaylist = namePlaylist;
+    public String getTitle() {
+        return title;
     }
 
-    public String getImagePlaylist() {
-        return imagePlaylist;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setImagePlaylist(String imagePlaylist) {
-        this.imagePlaylist = imagePlaylist;
+    public String getArtist() {
+        return artist;
+    }
+
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public boolean isPlaying() {
+        return isPlaying;
+    }
+
+    public void setPlaying(boolean playing) {
+        isPlaying = playing;
     }
 }
